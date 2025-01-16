@@ -1,0 +1,236 @@
+body {
+  background-color: #2b2727;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-custom img{
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: transparent;
+  padding: 18px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: #1e1e1e !important;
+}
+
+.navbar-style li a:hover {
+  color: #9eec2b;
+}
+
+.logo img {
+  width: 45px;
+  height: auto;
+}
+
+.welcome-section {
+  padding: 300px 20px;
+  background-color: #2b2727;
+  padding-top: 120px;
+}
+
+.welcome-section h1 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.welcome-section h1.text-im {
+  color: #9eec2b;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.welcome-section .btn {
+  padding: 9px 24px;
+  background-color: #9eec2b;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-section .btn:hover {
+  background-color: #fff;
+}
+
+.portfolio-bagian {
+  padding: 50px 0;
+  background-color: #1e1e1e;
+}
+.scrolled{
+  background-color: rgb(0, 0, 0);
+}
+
+.work-section{
+  width: 100%;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.work-section .card {
+  transition: transform 0.3s ease;
+}
+
+.work-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-samping {
+  display: flex;
+  gap: 10px;
+  padding: 0 30px;
+  overflow-x: auto;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  min-width: max-content;
+  flex-shrink: 0;
+}
+
+.project-item img {
+  width: 30%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:min-content;
+  height: min-content;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+footer a {
+  color: #9eec2b;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.contact-section {
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 1468px){
+  .d-none-xl{
+    display: none;
+  }
+}
+
+/* Social Media Contact Section */
+#social-contact {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#social-contact h2 {
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  transition: color 0.3s ease;
+}
+
+.contact-icon i {
+  font-size: 2.5rem;
+  color: #9eec2b;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-icon:hover i {
+  transform: scale(1.2);
+  color: #273f29;
+}
+
+.contact-icon:hover p {
+  color: #83c913ad;
+}
+
+.container-testimoni {
+  padding-top: calc(150px + 20px); /* Menambahkan padding agar tidak tertutup navbar */
+  width: 90%;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 150px;
+}
